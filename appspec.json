@@ -1,22 +1,35 @@
 {
   "settings": [
-    {
-      "id": "year",
-      "name": "The year.",
-      "description": "Insert description for the year setting setting",
-      "defaultValue": 2022,
-      "type": "INTEGER"
-    }
   ],
   "dependencies": {
     "R": [
       {
-        "name": "lubridate",
-        "version": "1.7.10"
+        "name": "move2"
       },
-      {
-        "name": "move"
-      }
+	        {
+        "name": "dplyr"
+      },
+	        {
+        "name": "magrittr"
+      },
+	        {
+        "name": "lubridate"
+      },
+	        {
+        "name": "circular"
+      },
+	        {
+        "name": "ggplot2"
+      },
+	        {
+        "name": "units"
+      },
+	        {
+        "name": "grid"
+      },
+	        {
+        "name": "gridExtra"
+      },
     ]
   },
   "createsArtifacts": true,
@@ -25,39 +38,45 @@
   },
   "language": "eng",
   "keywords": [
-    "example",
-    "template"
+    "speed",
+    "direction",
+	"move2",
+	"circular",
+	"distribution",
+	"month"
   ],
   "people": [
-    {
-      "firstName": "Charles",
+        {
+     "firstName": "Andrea",
       "middleInitials": null,
-      "lastName": "Darwin",
-      "email": "creator@example.com",
+      "lastName": "Kölzsch",
+      "email": "akoelzsch@ab.mpg.de",
       "roles": [
         "author",
         "creator"
       ],
-      "orcid": null,
-      "affiliation": null,
-      "affiliationRor": null
+      "orcid": "0000-0003-0193-1563",
+      "affiliation": "Max-Planck-Institute of Animal Behavior",
+      "affiliationRor": "https://ror.org/026stee22"
+    },
+	{
+      "firstName": "Bart",
+      "middleInitials": null,
+      "lastName": "Kranstauber",
+      "email": "b.kranstauber@uva.nl",
+      "roles": ["author"]
     }
   ],
-  "funding": [
-    {
-      "name": "funder name",
-      "comment": "grant for App"
-    }
-  ],
+  
   "references": [
     {
-      "type": "IsDescribedBy",
-      "note": "Darwin, C. 1900. The creation. Journal XY. 1-2",
-      "url": "https://anylink.xyz"
+      "type": "IsVariantFormOf",
+      "note": "Trajectory analysis of turkey vultures with move2",
+      "url": "https://bartk.gitlab.io/move2/articles/trajectory_analysis.html"
     }
   ],
   "documentation": {
-    "url": "https://github.com/yourAccount/my-app/README.md"
+    "url": "https://github.com/movestore/Speed-Direction-Plots/blob/master/README.md"
   }
 }
 
