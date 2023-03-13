@@ -5,6 +5,7 @@ library('lubridate')
 library('circular')
 library('ggplot2')
 library('units')
+library('lwgeom')
 library('grid')
 library('gridExtra')
 
@@ -41,7 +42,7 @@ rFunction = function(data) {
           limits = set_units(c(-180, 180), "degrees"),
           breaks = (-2:2) * 90
         ) +
-        labs(title=paste("Speed Direction Plots",id,sep=", ")) +
+        labs(title=paste("Speed Direction Plots",ids[i],sep=", ")) +
         facet_wrap(~month) +
         scale_fill_ordinal("Speed") +
         theme_linedraw() -> g[[i]]
